@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    font-family: "Nunito";
+    color: #222222;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.bg-info{
+    background-color: rgb(17, 14, 211);
+}
+
+.info{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.info p{
+    margin: 0 10px 15px 10px;
+}
+
+header{
+    background-color: #2c70ff;
+    color: white;
+}
+
+nav{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-logo{
+    font-size: 2.25em;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.menu-nav a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 1.25em;
+}
+
+#wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#wrapper .title{
+    font-size: 1.5em;
+    line-height: 1;
+    max-width: 960;
+    padding: 60px 0;
+}
+
+.about{
+    border-top:2px solid rgb(17, 14, 211);
+    border-bottom:2px solid rgb(17, 14, 211);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0;
+}
+
+.about-info{
+    flex: 2 1 300px;
+    margin: 0 10px;
+}
+
+.about-info h1{
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.about-info p{
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: #7c7c7c;
+}
+
+.about-image{
+    flex: 1 1 160px;
+    margin: 0 10px;
+}
+
+ .products{
+    max-width: 960px;
+    margin: 60px auto;
+}
+
+.products h1{
+    font-size: 3em;
+    margin: 0 10px 60px 10px;
+}
+
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+	align-items: flex-end;
+} 
+
+.item h2 {
+	font-size: 3em;
+	color: #a4a4a4;
+	background: #f7f7f7;
+	padding: 60px 20px;
+}
+
+.item{
+    flex: 1 1 175px;
+    margin: 10px;
+}
+
+.purple{
+    border-top: 8px solid #ae81ff;
+}
+
+.red {
+	border-top: 8px solid #f9265e;
+}
+
+.blue {
+	border-top: 8px solid #66d9eb;
+}
+
+/* Cards Price */
+#price{
+    background: #f7f7f7;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.card{
+    flex: 1;
+    border: 4px solid white;
+    padding: 20px;
+    margin: 10px;
+}
+
+.card h2{
+    font-size: 3em;
+    color: #a4a4a4;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card span{
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0 5px 0;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+}
+
+.card ul{
+    list-style-type: none;
+    max-width: 300px;
+    margin: 20px auto;
+    font-size: 1.25em;
+    font-style: italic;
+    color: #7c7c7c;
+}
+
+.card li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card li::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #2c70ff;
+    border-radius: 50%;
+}
+
+.card a{
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+    border: 4px solid;
+    color: #222222;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.25em;
+    padding: 15px 0;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+	#price{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#price .card:nth-child(3) {
+		order: -2;
+	}
+	#price .card:nth-child(2) {
+		order: -1;
+	}
+}
+
+/* Qualidade */
+#qualidade{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.qualidade-item{
+    flex-grow: 1;
+    margin: 20px 10px;
+    font: 45px;
+    flex-basis: 300px;
+}
+
+.qualidade-item h2 {
+    font-size: 2.25em;
+    color: #a4a4a4;
+    margin-bottom: 20px;
+}
+
+.qualidade-item h2::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 30px;
+    margin-right: 10px;
+    background: #2c70ff;
+}
+
+.qualidade-item p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    color: #7c7c7c;
+}
+
+.qualidade-item:nth-of-type(3n+1) h2::before {
+    background: #ae81ff;
+}
+
+.qualidade-item:nth-of-type(3n+3) h2::before {
+    background: #66d9eb;
+}
+
+.qualidade-item:nth-of-type(3n+2) h2::before {
+    background: #f9265e;
+}
+
